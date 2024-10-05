@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using ClassLibrary;
+using System.Text.RegularExpressions;
 
 namespace ClassComparing
 {
@@ -6,21 +7,40 @@ namespace ClassComparing
 	{
 		static void Main(string[] args)
 		{
+			// Объявление нового объекта.
 			Person person;
 			person = new Person();
+
+			//-------------------------------------------------------
 			Console.Write("Введите имя: ");
 			string name = Console.ReadLine();
 			person.Name = name;
 
+			/// Важно вводить имя правильно
+			/// Иначе если строка будет иметь 
+			/// Цифры или любые другие буквы 
+			/// Кроме английских то ввод не будет
+			/// Осуществлен.
+			
 			Console.Write("Год рождения: ");
 			string strigngYear = Console.ReadLine();
-			int year = Convert.ToInt32(strigngYear);
+
 			Console.Write("Месяц рождения: ");
 			string stringMonth = Console.ReadLine();
-			int month = Convert.ToInt32(stringMonth);
+
 			Console.Write("День рождения: ");
 			string stringDay = Console.ReadLine();
+			
+			
+
+			
+			int year = Convert.ToInt32(strigngYear);
+			int month = Convert.ToInt32(stringMonth);
 			int day = Convert.ToInt32(stringDay);
+
+			/// Конвертируем string в int потому что 
+			/// DataTime может работать только с типом int
+
 			person.DateOfBirthday = new DateTime(year, month, day);
 
 			Console.WriteLine($"Имя: {person.Name}");
