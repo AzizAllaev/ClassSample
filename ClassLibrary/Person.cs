@@ -9,9 +9,11 @@ namespace ClassLibrary
 	public class Person
 	{
 		// Два свойства класса Person имя(ФИО) и дата рождения
-		
+		protected string protectedFieldParentsName;
 		private string name;
 		private DateTime dateofbirthday;
+		protected string a;
+		
 
 		//------------------------------------------------------
 

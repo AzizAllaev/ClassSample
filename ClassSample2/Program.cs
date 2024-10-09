@@ -10,7 +10,7 @@ namespace ClassComparing
 			// Объявление нового объекта.
 			Person person;
 			person = new Person();
-
+		
 			//-------------------------------------------------------
 			Console.Write("Введите имя: ");
 			string name = Console.ReadLine();
