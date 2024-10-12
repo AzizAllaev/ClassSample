@@ -14,22 +14,22 @@ namespace ClassLibrary
 	/// </summary>
 	public class Human : Person
 	{
-		private string _behaviour;
+		private string _Behaviour;
 
 		public Human()
 		{
 			protectedFieldParentsName = "Унаследован от Person";
 		}
 
-		public string behaviour
+		public string EyeColor
 		{
 			get
 			{
-				return _behaviour;
+				return _Behaviour;
 			}
 			set
 			{
-				_behaviour = value;
+				_Behaviour = value;
 			}
 		}
 		

@@ -7,47 +7,28 @@ namespace ClassComparing
 	{
 		static void Main(string[] args)
 		{
-			// Объявление нового объекта.
-			Person person;
-			person = new Person();
-		
-			//-------------------------------------------------------
-			Console.Write("Введите имя: ");
-			string name = Console.ReadLine();
-			person.Name = name;
+			Human human1;
+			human1 = new Human();
 
-			/// Важно вводить имя правильно
-			/// Иначе если строка будет иметь 
-			/// Цифры или любые другие символы
-			/// Кроме букв английских то ввод не будет
-			/// Осуществлен.
-			
-			Console.Write("Год рождения: ");
-			string strigngYear = Console.ReadLine();
-
-			Console.Write("Месяц рождения: ");
+			Console.Write("Введите ФИО: ");
+			human1.Name = Console.ReadLine();
+			Console.Write("Введите Год рождения: ");
+			string stringYear= Console.ReadLine();
+			Console.Write("Введите Месяц рождения: ");
 			string stringMonth = Console.ReadLine();
-
-			Console.Write("День рождения: ");
+			Console.Write("Введите День рождения: ");
 			string stringDay = Console.ReadLine();
-			
-			
-
-			
-			int year = Convert.ToInt32(strigngYear);
+			Console.Write("Допольнительные параметры(цвет глаз): ");
+			string addinfo = Console.ReadLine();
+			addinfo = human1.EyeColor;
+			int year = Convert.ToInt32(stringYear);
 			int month = Convert.ToInt32(stringMonth);
 			int day = Convert.ToInt32(stringDay);
 
-			/// Конвертируем string в int потому что 
-			/// DataTime может работать только с типом int
+			human1.DateOfBirthday = new DateTime(year, month, day);
 
-			person.DateOfBirthday = new DateTime(year, month, day);
-
-			Console.WriteLine($"Имя: {person.Name}");
-			Console.WriteLine($"Дата рождения: {person.DateOfBirthday}");
-
-
-			Console.ReadKey();
+			Console.WriteLine($"ФИО: {human1.Name} | Дата рождения: {human1.DateOfBirthday}");
+			Console.WriteLine(human1.EyeColor);
 		}
 	}
 }
