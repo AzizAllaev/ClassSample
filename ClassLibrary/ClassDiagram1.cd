@@ -1,17 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ClassLibrary.Human">
-    <Position X="6.5" Y="1.5" Width="1.5" />
+  <Class Name="ClassLibrary.Animal" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAAAA=</HashCode>
-      <FileName>Human.cs</FileName>
+      <HashCode>CAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animal.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ClassLibrary.Person">
-    <Position X="3.75" Y="1.5" Width="1.5" />
+  <Class Name="ClassLibrary.Dog">
+    <Position X="4.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAQAAAAAAAAAQAAAAEAAEgAAAAAAAAAAA=</HashCode>
-      <FileName>Person.cs</FileName>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary.Cat">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
