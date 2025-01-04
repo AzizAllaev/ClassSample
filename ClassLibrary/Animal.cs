@@ -8,17 +8,17 @@ namespace ClassLibrary
 {
 	public class Animal
 	{
-		private string _name;
+		private string _Name;
 
 		public string Name
 		{
 			get
 			{
-				return _name;
+				return _Name;
 			}
 			set
 			{
-				_name = value;
+				_Name = value;
 			}
 		}
 
