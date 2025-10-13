@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-	public class Animal
+	public abstract class Animal
 	{
 		private string _Name;
 
